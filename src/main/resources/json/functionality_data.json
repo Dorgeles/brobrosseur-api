@@ -1,0 +1,390 @@
+{
+	"user": 1,
+	"datas": [
+		{
+			"code": "ACTIVITE",
+			"name": "ACTIVITE"
+		},
+		{
+			"code": "VIEW_ACTIVITE",
+			"parentCode": "ACTIVITE",
+			"name": "VIEW ACTIVITE"
+		},
+		{
+			"code": "CREATE_ACTIVITE",
+			"parentCode": "ACTIVITE",
+			"name": "CREATE ACTIVITE"
+		},
+		{
+			"code": "UPDATE_ACTIVITE",
+			"parentCode": "ACTIVITE",
+			"name": "UPDATE ACTIVITE"
+		},
+		{
+			"code": "DELETE_ACTIVITE",
+			"parentCode": "ACTIVITE",
+			"name": "DELETE ACTIVITE"
+		},
+		{
+			"code": "ACTIVITE_PRESTATION",
+			"name": "ACTIVITE_PRESTATION"
+		},
+		{
+			"code": "VIEW_ACTIVITE_PRESTATION",
+			"parentCode": "ACTIVITE_PRESTATION",
+			"name": "VIEW ACTIVITE_PRESTATION"
+		},
+		{
+			"code": "CREATE_ACTIVITE_PRESTATION",
+			"parentCode": "ACTIVITE_PRESTATION",
+			"name": "CREATE ACTIVITE_PRESTATION"
+		},
+		{
+			"code": "UPDATE_ACTIVITE_PRESTATION",
+			"parentCode": "ACTIVITE_PRESTATION",
+			"name": "UPDATE ACTIVITE_PRESTATION"
+		},
+		{
+			"code": "DELETE_ACTIVITE_PRESTATION",
+			"parentCode": "ACTIVITE_PRESTATION",
+			"name": "DELETE ACTIVITE_PRESTATION"
+		},
+		{
+			"code": "COMMAND",
+			"name": "COMMAND"
+		},
+		{
+			"code": "VIEW_COMMAND",
+			"parentCode": "COMMAND",
+			"name": "VIEW COMMAND"
+		},
+		{
+			"code": "CREATE_COMMAND",
+			"parentCode": "COMMAND",
+			"name": "CREATE COMMAND"
+		},
+		{
+			"code": "UPDATE_COMMAND",
+			"parentCode": "COMMAND",
+			"name": "UPDATE COMMAND"
+		},
+		{
+			"code": "DELETE_COMMAND",
+			"parentCode": "COMMAND",
+			"name": "DELETE COMMAND"
+		},
+		{
+			"code": "EVALUATION_COMMAND",
+			"name": "EVALUATION_COMMAND"
+		},
+		{
+			"code": "VIEW_EVALUATION_COMMAND",
+			"parentCode": "EVALUATION_COMMAND",
+			"name": "VIEW EVALUATION_COMMAND"
+		},
+		{
+			"code": "CREATE_EVALUATION_COMMAND",
+			"parentCode": "EVALUATION_COMMAND",
+			"name": "CREATE EVALUATION_COMMAND"
+		},
+		{
+			"code": "UPDATE_EVALUATION_COMMAND",
+			"parentCode": "EVALUATION_COMMAND",
+			"name": "UPDATE EVALUATION_COMMAND"
+		},
+		{
+			"code": "DELETE_EVALUATION_COMMAND",
+			"parentCode": "EVALUATION_COMMAND",
+			"name": "DELETE EVALUATION_COMMAND"
+		},
+		{
+			"code": "IMAGES_PRESTATION",
+			"name": "IMAGES_PRESTATION"
+		},
+		{
+			"code": "VIEW_IMAGES_PRESTATION",
+			"parentCode": "IMAGES_PRESTATION",
+			"name": "VIEW IMAGES_PRESTATION"
+		},
+		{
+			"code": "CREATE_IMAGES_PRESTATION",
+			"parentCode": "IMAGES_PRESTATION",
+			"name": "CREATE IMAGES_PRESTATION"
+		},
+		{
+			"code": "UPDATE_IMAGES_PRESTATION",
+			"parentCode": "IMAGES_PRESTATION",
+			"name": "UPDATE IMAGES_PRESTATION"
+		},
+		{
+			"code": "DELETE_IMAGES_PRESTATION",
+			"parentCode": "IMAGES_PRESTATION",
+			"name": "DELETE IMAGES_PRESTATION"
+		},
+		{
+			"code": "MOYEN_DEPLACEMENT",
+			"name": "MOYEN_DEPLACEMENT"
+		},
+		{
+			"code": "VIEW_MOYEN_DEPLACEMENT",
+			"parentCode": "MOYEN_DEPLACEMENT",
+			"name": "VIEW MOYEN_DEPLACEMENT"
+		},
+		{
+			"code": "CREATE_MOYEN_DEPLACEMENT",
+			"parentCode": "MOYEN_DEPLACEMENT",
+			"name": "CREATE MOYEN_DEPLACEMENT"
+		},
+		{
+			"code": "UPDATE_MOYEN_DEPLACEMENT",
+			"parentCode": "MOYEN_DEPLACEMENT",
+			"name": "UPDATE MOYEN_DEPLACEMENT"
+		},
+		{
+			"code": "DELETE_MOYEN_DEPLACEMENT",
+			"parentCode": "MOYEN_DEPLACEMENT",
+			"name": "DELETE MOYEN_DEPLACEMENT"
+		},
+		{
+			"code": "PRESTATAIRE_ZONE_LIVRAISON",
+			"name": "PRESTATAIRE_ZONE_LIVRAISON"
+		},
+		{
+			"code": "VIEW_PRESTATAIRE_ZONE_LIVRAISON",
+			"parentCode": "PRESTATAIRE_ZONE_LIVRAISON",
+			"name": "VIEW PRESTATAIRE_ZONE_LIVRAISON"
+		},
+		{
+			"code": "CREATE_PRESTATAIRE_ZONE_LIVRAISON",
+			"parentCode": "PRESTATAIRE_ZONE_LIVRAISON",
+			"name": "CREATE PRESTATAIRE_ZONE_LIVRAISON"
+		},
+		{
+			"code": "UPDATE_PRESTATAIRE_ZONE_LIVRAISON",
+			"parentCode": "PRESTATAIRE_ZONE_LIVRAISON",
+			"name": "UPDATE PRESTATAIRE_ZONE_LIVRAISON"
+		},
+		{
+			"code": "DELETE_PRESTATAIRE_ZONE_LIVRAISON",
+			"parentCode": "PRESTATAIRE_ZONE_LIVRAISON",
+			"name": "DELETE PRESTATAIRE_ZONE_LIVRAISON"
+		},
+		{
+			"code": "PRESTATION",
+			"name": "PRESTATION"
+		},
+		{
+			"code": "VIEW_PRESTATION",
+			"parentCode": "PRESTATION",
+			"name": "VIEW PRESTATION"
+		},
+		{
+			"code": "CREATE_PRESTATION",
+			"parentCode": "PRESTATION",
+			"name": "CREATE PRESTATION"
+		},
+		{
+			"code": "UPDATE_PRESTATION",
+			"parentCode": "PRESTATION",
+			"name": "UPDATE PRESTATION"
+		},
+		{
+			"code": "DELETE_PRESTATION",
+			"parentCode": "PRESTATION",
+			"name": "DELETE PRESTATION"
+		},
+		{
+			"code": "PRESTATION_MOYEN_DEPLACEMENT",
+			"name": "PRESTATION_MOYEN_DEPLACEMENT"
+		},
+		{
+			"code": "VIEW_PRESTATION_MOYEN_DEPLACEMENT",
+			"parentCode": "PRESTATION_MOYEN_DEPLACEMENT",
+			"name": "VIEW PRESTATION_MOYEN_DEPLACEMENT"
+		},
+		{
+			"code": "CREATE_PRESTATION_MOYEN_DEPLACEMENT",
+			"parentCode": "PRESTATION_MOYEN_DEPLACEMENT",
+			"name": "CREATE PRESTATION_MOYEN_DEPLACEMENT"
+		},
+		{
+			"code": "UPDATE_PRESTATION_MOYEN_DEPLACEMENT",
+			"parentCode": "PRESTATION_MOYEN_DEPLACEMENT",
+			"name": "UPDATE PRESTATION_MOYEN_DEPLACEMENT"
+		},
+		{
+			"code": "DELETE_PRESTATION_MOYEN_DEPLACEMENT",
+			"parentCode": "PRESTATION_MOYEN_DEPLACEMENT",
+			"name": "DELETE PRESTATION_MOYEN_DEPLACEMENT"
+		},
+		{
+			"code": "RECORD_IMAGE",
+			"name": "RECORD_IMAGE"
+		},
+		{
+			"code": "VIEW_RECORD_IMAGE",
+			"parentCode": "RECORD_IMAGE",
+			"name": "VIEW RECORD_IMAGE"
+		},
+		{
+			"code": "CREATE_RECORD_IMAGE",
+			"parentCode": "RECORD_IMAGE",
+			"name": "CREATE RECORD_IMAGE"
+		},
+		{
+			"code": "UPDATE_RECORD_IMAGE",
+			"parentCode": "RECORD_IMAGE",
+			"name": "UPDATE RECORD_IMAGE"
+		},
+		{
+			"code": "DELETE_RECORD_IMAGE",
+			"parentCode": "RECORD_IMAGE",
+			"name": "DELETE RECORD_IMAGE"
+		},
+		{
+			"code": "ROLE",
+			"name": "ROLE"
+		},
+		{
+			"code": "VIEW_ROLE",
+			"parentCode": "ROLE",
+			"name": "VIEW ROLE"
+		},
+		{
+			"code": "CREATE_ROLE",
+			"parentCode": "ROLE",
+			"name": "CREATE ROLE"
+		},
+		{
+			"code": "UPDATE_ROLE",
+			"parentCode": "ROLE",
+			"name": "UPDATE ROLE"
+		},
+		{
+			"code": "DELETE_ROLE",
+			"parentCode": "ROLE",
+			"name": "DELETE ROLE"
+		},
+		{
+			"code": "TYPE_CLIENT",
+			"name": "TYPE_CLIENT"
+		},
+		{
+			"code": "VIEW_TYPE_CLIENT",
+			"parentCode": "TYPE_CLIENT",
+			"name": "VIEW TYPE_CLIENT"
+		},
+		{
+			"code": "CREATE_TYPE_CLIENT",
+			"parentCode": "TYPE_CLIENT",
+			"name": "CREATE TYPE_CLIENT"
+		},
+		{
+			"code": "UPDATE_TYPE_CLIENT",
+			"parentCode": "TYPE_CLIENT",
+			"name": "UPDATE TYPE_CLIENT"
+		},
+		{
+			"code": "DELETE_TYPE_CLIENT",
+			"parentCode": "TYPE_CLIENT",
+			"name": "DELETE TYPE_CLIENT"
+		},
+		{
+			"code": "UTILISATEUR",
+			"name": "UTILISATEUR"
+		},
+		{
+			"code": "VIEW_UTILISATEUR",
+			"parentCode": "UTILISATEUR",
+			"name": "VIEW UTILISATEUR"
+		},
+		{
+			"code": "CREATE_UTILISATEUR",
+			"parentCode": "UTILISATEUR",
+			"name": "CREATE UTILISATEUR"
+		},
+		{
+			"code": "UPDATE_UTILISATEUR",
+			"parentCode": "UTILISATEUR",
+			"name": "UPDATE UTILISATEUR"
+		},
+		{
+			"code": "DELETE_UTILISATEUR",
+			"parentCode": "UTILISATEUR",
+			"name": "DELETE UTILISATEUR"
+		},
+		{
+			"code": "UTILISATEUR_ACTIVITE",
+			"name": "UTILISATEUR_ACTIVITE"
+		},
+		{
+			"code": "VIEW_UTILISATEUR_ACTIVITE",
+			"parentCode": "UTILISATEUR_ACTIVITE",
+			"name": "VIEW UTILISATEUR_ACTIVITE"
+		},
+		{
+			"code": "CREATE_UTILISATEUR_ACTIVITE",
+			"parentCode": "UTILISATEUR_ACTIVITE",
+			"name": "CREATE UTILISATEUR_ACTIVITE"
+		},
+		{
+			"code": "UPDATE_UTILISATEUR_ACTIVITE",
+			"parentCode": "UTILISATEUR_ACTIVITE",
+			"name": "UPDATE UTILISATEUR_ACTIVITE"
+		},
+		{
+			"code": "DELETE_UTILISATEUR_ACTIVITE",
+			"parentCode": "UTILISATEUR_ACTIVITE",
+			"name": "DELETE UTILISATEUR_ACTIVITE"
+		},
+		{
+			"code": "UTILISATEUR_ROLE",
+			"name": "UTILISATEUR_ROLE"
+		},
+		{
+			"code": "VIEW_UTILISATEUR_ROLE",
+			"parentCode": "UTILISATEUR_ROLE",
+			"name": "VIEW UTILISATEUR_ROLE"
+		},
+		{
+			"code": "CREATE_UTILISATEUR_ROLE",
+			"parentCode": "UTILISATEUR_ROLE",
+			"name": "CREATE UTILISATEUR_ROLE"
+		},
+		{
+			"code": "UPDATE_UTILISATEUR_ROLE",
+			"parentCode": "UTILISATEUR_ROLE",
+			"name": "UPDATE UTILISATEUR_ROLE"
+		},
+		{
+			"code": "DELETE_UTILISATEUR_ROLE",
+			"parentCode": "UTILISATEUR_ROLE",
+			"name": "DELETE UTILISATEUR_ROLE"
+		},
+		{
+			"code": "ZONE_LIVRAISON",
+			"name": "ZONE_LIVRAISON"
+		},
+		{
+			"code": "VIEW_ZONE_LIVRAISON",
+			"parentCode": "ZONE_LIVRAISON",
+			"name": "VIEW ZONE_LIVRAISON"
+		},
+		{
+			"code": "CREATE_ZONE_LIVRAISON",
+			"parentCode": "ZONE_LIVRAISON",
+			"name": "CREATE ZONE_LIVRAISON"
+		},
+		{
+			"code": "UPDATE_ZONE_LIVRAISON",
+			"parentCode": "ZONE_LIVRAISON",
+			"name": "UPDATE ZONE_LIVRAISON"
+		},
+		{
+			"code": "DELETE_ZONE_LIVRAISON",
+			"parentCode": "ZONE_LIVRAISON",
+			"name": "DELETE ZONE_LIVRAISON"
+		}
+
+	]
+}

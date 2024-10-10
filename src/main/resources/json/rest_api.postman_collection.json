@@ -1,0 +1,1819 @@
+
+{
+
+    "info": {
+        "_postman_id": "df67b7b8-9986-4f5f-836e-e0af58c8e968",
+        "name": "com_wdy_brobrosseur",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+		{
+			"name": "activite",
+			"item": [
+                {
+					"name": "activite.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"libelle\": \"\", \t\t\t\"description\": \"\", \t\t\t\"latitude\": \"\", \t\t\t\"longitude\": \"\", \t\t\t\"noteMoyenne\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"dateOuverture\": \"\", \t\t\t\"dateFermeture\": \"\", \t\t\t\"deletedAt\": \"\", \t\t\t\"dateFin\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/activite/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"activite",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "activite.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"description\": \"\", \t\t\t\"latitude\": \"\", \t\t\t\"longitude\": \"\", \t\t\t\"noteMoyenne\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"dateOuverture\": \"\", \t\t\t\"dateFermeture\": \"\", \t\t\t\"deletedAt\": \"\", \t\t\t\"dateFin\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/activite/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "activite",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "activite.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/activite/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "activite",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "activite.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"libelle\": \"\", \t\t\"description\": \"\", \t\t\"latitude\": \"\", \t\t\"longitude\": \"\", \t\t\"noteMoyenne\": \"\", \t\t\"statusId\": \"\", \t\t\"dateOuverture\": \"\", \t\t\"dateFermeture\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\", \t\t\"dateFin\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/activite/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "activite",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "activitePrestation",
+			"item": [
+                {
+					"name": "activitePrestation.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"activiteId\": \"\", \t\t\t\"prestationId\": \"\", \t\t\t\"description\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/activitePrestation/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"activitePrestation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "activitePrestation.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"activiteId\": \"\", \t\t\t\"prestationId\": \"\", \t\t\t\"description\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/activitePrestation/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "activitePrestation",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "activitePrestation.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/activitePrestation/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "activitePrestation",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "activitePrestation.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"activiteId\": \"\", \t\t\"prestationId\": \"\", \t\t\"description\": \"\", \t\t\"libelle\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/activitePrestation/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "activitePrestation",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "command",
+			"item": [
+                {
+					"name": "command.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"utilisateurId\": \"\", \t\t\t\"prestationId\": \"\", \t\t\t\"typeCommand\": \"\", \t\t\t\"latitudeLivraison\": \"\", \t\t\t\"note\": \"\", \t\t\t\"longitudeLivraison\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/command/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"command",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "command.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"utilisateurId\": \"\", \t\t\t\"prestationId\": \"\", \t\t\t\"typeCommand\": \"\", \t\t\t\"latitudeLivraison\": \"\", \t\t\t\"note\": \"\", \t\t\t\"longitudeLivraison\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/command/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "command",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "command.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/command/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "command",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "command.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"utilisateurId\": \"\", \t\t\"prestationId\": \"\", \t\t\"typeCommand\": \"\", \t\t\"latitudeLivraison\": \"\", \t\t\"note\": \"\", \t\t\"longitudeLivraison\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/command/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "command",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "evaluationCommand",
+			"item": [
+                {
+					"name": "evaluationCommand.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"commandeId\": \"\", \t\t\t\"noteRapidite\": \"\", \t\t\t\"notePrestation\": \"\", \t\t\t\"noteConservation\": \"\", \t\t\t\"commentairePrestation\": \"\", \t\t\t\"dateEvaluation\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/evaluationCommand/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"evaluationCommand",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "evaluationCommand.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"commandeId\": \"\", \t\t\t\"noteRapidite\": \"\", \t\t\t\"notePrestation\": \"\", \t\t\t\"noteConservation\": \"\", \t\t\t\"commentairePrestation\": \"\", \t\t\t\"dateEvaluation\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/evaluationCommand/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "evaluationCommand",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "evaluationCommand.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/evaluationCommand/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "evaluationCommand",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "evaluationCommand.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"commandeId\": \"\", \t\t\"noteRapidite\": \"\", \t\t\"notePrestation\": \"\", \t\t\"noteConservation\": \"\", \t\t\"commentairePrestation\": \"\", \t\t\"dateEvaluation\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/evaluationCommand/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "evaluationCommand",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "imagesPrestation",
+			"item": [
+                {
+					"name": "imagesPrestation.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"prestationId\": \"\", \t\t\t\"url\": \"\", \t\t\t\"description\": \"\", \t\t\t\"ordre\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/imagesPrestation/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"imagesPrestation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "imagesPrestation.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"prestationId\": \"\", \t\t\t\"url\": \"\", \t\t\t\"description\": \"\", \t\t\t\"ordre\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/imagesPrestation/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "imagesPrestation",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "imagesPrestation.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/imagesPrestation/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "imagesPrestation",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "imagesPrestation.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"prestationId\": \"\", \t\t\"url\": \"\", \t\t\"description\": \"\", \t\t\"ordre\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/imagesPrestation/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "imagesPrestation",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "moyenDeplacement",
+			"item": [
+                {
+					"name": "moyenDeplacement.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"libelle\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/moyenDeplacement/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"moyenDeplacement",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "moyenDeplacement.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/moyenDeplacement/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "moyenDeplacement",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "moyenDeplacement.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/moyenDeplacement/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "moyenDeplacement",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "moyenDeplacement.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"libelle\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/moyenDeplacement/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "moyenDeplacement",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "prestataireZoneLivraison",
+			"item": [
+                {
+					"name": "prestataireZoneLivraison.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"prestataireId\": \"\", \t\t\t\"zoneLivraisonId\": \"\", \t\t\t\"description\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\", \t\t\t\"dateFin\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/prestataireZoneLivraison/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"prestataireZoneLivraison",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "prestataireZoneLivraison.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"prestataireId\": \"\", \t\t\t\"zoneLivraisonId\": \"\", \t\t\t\"description\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\", \t\t\t\"dateFin\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/prestataireZoneLivraison/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "prestataireZoneLivraison",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "prestataireZoneLivraison.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/prestataireZoneLivraison/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "prestataireZoneLivraison",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "prestataireZoneLivraison.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"prestataireId\": \"\", \t\t\"zoneLivraisonId\": \"\", \t\t\"description\": \"\", \t\t\"libelle\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\", \t\t\"dateFin\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/prestataireZoneLivraison/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "prestataireZoneLivraison",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "prestation",
+			"item": [
+                {
+					"name": "prestation.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"projetId\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"description\": \"\", \t\t\t\"prix\": \"\", \t\t\t\"dureeEstimee\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/prestation/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"prestation",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "prestation.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"projetId\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"description\": \"\", \t\t\t\"prix\": \"\", \t\t\t\"dureeEstimee\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/prestation/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "prestation",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "prestation.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/prestation/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "prestation",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "prestation.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"projetId\": \"\", \t\t\"libelle\": \"\", \t\t\"description\": \"\", \t\t\"prix\": \"\", \t\t\"dureeEstimee\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/prestation/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "prestation",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "prestationMoyenDeplacement",
+			"item": [
+                {
+					"name": "prestationMoyenDeplacement.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"presatationId\": \"\", \t\t\t\"moyenDeplacementId\": \"\", \t\t\t\"dateDebut\": \"\", \t\t\t\"dateFin\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/prestationMoyenDeplacement/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"prestationMoyenDeplacement",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "prestationMoyenDeplacement.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"presatationId\": \"\", \t\t\t\"moyenDeplacementId\": \"\", \t\t\t\"dateDebut\": \"\", \t\t\t\"dateFin\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/prestationMoyenDeplacement/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "prestationMoyenDeplacement",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "prestationMoyenDeplacement.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/prestationMoyenDeplacement/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "prestationMoyenDeplacement",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "prestationMoyenDeplacement.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"presatationId\": \"\", \t\t\"moyenDeplacementId\": \"\", \t\t\"dateDebut\": \"\", \t\t\"dateFin\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/prestationMoyenDeplacement/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "prestationMoyenDeplacement",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "recordImage",
+			"item": [
+                {
+					"name": "recordImage.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"activiteId\": \"\", \t\t\t\"url\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/recordImage/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"recordImage",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "recordImage.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"activiteId\": \"\", \t\t\t\"url\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/recordImage/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "recordImage",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "recordImage.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/recordImage/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "recordImage",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "recordImage.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"activiteId\": \"\", \t\t\"url\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/recordImage/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "recordImage",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "role",
+			"item": [
+                {
+					"name": "role.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"description\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\", \t\t\t\"dateFin\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/role/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"role",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "role.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"description\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\", \t\t\t\"dateFin\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/role/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "role",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "role.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/role/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "role",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "role.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"description\": \"\", \t\t\"libelle\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\", \t\t\"dateFin\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/role/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "role",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "typeClient",
+			"item": [
+                {
+					"name": "typeClient.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"description\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/typeClient/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"typeClient",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "typeClient.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"description\": \"\", \t\t\t\"libelle\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/typeClient/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "typeClient",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "typeClient.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/typeClient/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "typeClient",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "typeClient.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"description\": \"\", \t\t\"libelle\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/typeClient/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "typeClient",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "utilisateur",
+			"item": [
+                {
+					"name": "utilisateur.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"nom\": \"\", \t\t\t\"username\": \"\", \t\t\t\"prenom\": \"\", \t\t\t\"email\": \"\", \t\t\t\"telephone\": \"\", \t\t\t\"telephone2\": \"\", \t\t\t\"motDePasse\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\", \t\t\t\"isLocked\": \"\", \t\t\t\"typeClientId\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/utilisateur/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"utilisateur",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "utilisateur.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"nom\": \"\", \t\t\t\"username\": \"\", \t\t\t\"prenom\": \"\", \t\t\t\"email\": \"\", \t\t\t\"telephone\": \"\", \t\t\t\"telephone2\": \"\", \t\t\t\"motDePasse\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\", \t\t\t\"isLocked\": \"\", \t\t\t\"typeClientId\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/utilisateur/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "utilisateur",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "utilisateur.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/utilisateur/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "utilisateur",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "utilisateur.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"nom\": \"\", \t\t\"username\": \"\", \t\t\"prenom\": \"\", \t\t\"email\": \"\", \t\t\"telephone\": \"\", \t\t\"telephone2\": \"\", \t\t\"motDePasse\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"isLocked\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\", \t\t\"typeClientId\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/utilisateur/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "utilisateur",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "utilisateurActivite",
+			"item": [
+                {
+					"name": "utilisateurActivite.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"utilisateurId\": \"\", \t\t\t\"activiteId\": \"\", \t\t\t\"commentaire\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\", \t\t\t\"dateFin\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/utilisateurActivite/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"utilisateurActivite",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "utilisateurActivite.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"utilisateurId\": \"\", \t\t\t\"activiteId\": \"\", \t\t\t\"commentaire\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\", \t\t\t\"dateFin\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/utilisateurActivite/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "utilisateurActivite",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "utilisateurActivite.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/utilisateurActivite/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "utilisateurActivite",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "utilisateurActivite.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"utilisateurId\": \"\", \t\t\"activiteId\": \"\", \t\t\"commentaire\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\", \t\t\"dateFin\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/utilisateurActivite/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "utilisateurActivite",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "utilisateurRole",
+			"item": [
+                {
+					"name": "utilisateurRole.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"utilisateurId\": \"\", \t\t\t\"roleId\": \"\", \t\t\t\"commentaire\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/utilisateurRole/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"utilisateurRole",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "utilisateurRole.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"utilisateurId\": \"\", \t\t\t\"roleId\": \"\", \t\t\t\"commentaire\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/utilisateurRole/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "utilisateurRole",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "utilisateurRole.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/utilisateurRole/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "utilisateurRole",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "utilisateurRole.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"utilisateurId\": \"\", \t\t\"roleId\": \"\", \t\t\"commentaire\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/utilisateurRole/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "utilisateurRole",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		},
+		{
+			"name": "zoneLivraison",
+			"item": [
+                {
+					"name": "zoneLivraison.create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"latitudeDepart\": \"\", \t\t\t\"longitudeDepart\": \"\", \t\t\t\"latitudeArrivee\": \"\", \t\t\t\"longitudeArrivee\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+						},
+						"url": {
+							"raw": "{{appUrl}}/zoneLivraison/create",
+							"host": [
+								"{{appUrl}}"
+							],
+							"path": [
+								"zoneLivraison",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+                    "name": "zoneLivraison.update",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\", \t\t\t\"latitudeDepart\": \"\", \t\t\t\"longitudeDepart\": \"\", \t\t\t\"latitudeArrivee\": \"\", \t\t\t\"longitudeArrivee\": \"\", \t\t\t\"statusId\": \"\", \t\t\t\"deletedAt\": \"\" \t\t}  \t]   }"
+                        },
+                        "url": {
+                            "raw": "{{appUrl}}/zoneLivraison/update",
+                            "host": [
+                                "{{appUrl}}"
+                            ],
+                            "path": [
+                                "zoneLivraison",
+                                "update"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                     "name": "zoneLivraison.delete",
+                     "request": {
+                         "method": "POST",
+                         "header": [
+                             {
+                                 "key": "Content-Type",
+                                 "value": "application/json"
+                             }
+                         ],
+                         "body": {
+                             "mode": "raw",
+                            "raw": "{ \t\"user\":\"1\", \t\"datas\":[ \t\t{   \t\t\t\"id\": \"\" \t\t}  \t]   }"
+                         },
+                         "url": {
+                             "raw": "{{appUrl}}/zoneLivraison/delete",
+                             "host": [
+                                 "{{appUrl}}"
+                             ],
+                             "path": [
+                                 "zoneLivraison",
+                                 "delete"
+                             ]
+                         }
+                     },
+                     "response": []
+                 },
+                 {
+                   "name": "zoneLivraison.getByCriteria",
+                   "request": {
+                       "method": "POST",
+                       "header": [
+                           {
+                               "key": "Content-Type",
+                               "value": "application/json"
+                           }
+                       ],
+                       "body": {
+                           "mode": "raw",
+			            "raw": "{ \t\"user\":\"1\", \t\"isSimpleLoading\":false, \t\"data\":{   \t\t\"id\": \"\", \t\t\"latitudeDepart\": \"\", \t\t\"longitudeDepart\": \"\", \t\t\"latitudeArrivee\": \"\", \t\t\"longitudeArrivee\": \"\", \t\t\"statusId\": \"\", \t\t\"updatedBy\": \"\", \t\t\"isDeleted\": \"\", \t\t\"createdBy\": \"\", \t\t\"deletedAt\": \"\", \t\t\"updatedAt\": \"\", \t\t\"createdAt\": \"\" \t}   }"
+},
+                       "url": {
+                           "raw": "{{appUrl}}/zoneLivraison/getByCriteria",
+                           "host": [
+                               "{{appUrl}}"
+                           ],
+                           "path": [
+                               "zoneLivraison",
+                               "getByCriteria"
+                           ]
+                       }
+                   },
+                   "response": []
+               }
+			]
+		}
+    ]
+}
